@@ -1,3 +1,139 @@
 /* =============
    Section 1
 ============= */
+
+#section-1 {
+
+   >#container-1 {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: ". header .";
+      display: grid;
+      background-image: url("../img/section-1/hero.png");
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 50px;
+
+
+      >h1 {
+         grid-area: header;
+         font-family: "Trattatello", cursive;
+         font-size: remcalc(60);
+         text-align: center;
+         color: $white;
+         margin: auto;
+      }
+   }
+
+   >#container-2 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: grid;
+      grid-template-areas: "climbing jam friends zone";
+      margin-bottom: 50px;
+
+      >div {
+         margin: 0 10px;
+
+         >h3 {
+            background-color: $lightgreen;
+            font-family: "Gill Sans", sans-serif;
+            font-size: remcalc(21);
+            font-weight: bold;
+            text-align: center;
+            color: $white;
+            padding: 0 25px;
+         }
+      }
+
+      >#climbing {
+         grid-area: climbing;
+         background-image: url("../img/section-1/climbing_jacksons_peak.png");
+         background-position: center;
+         background-size: cover;
+         height: 225px;
+      }
+
+      >#jam {
+         grid-area: jam;
+         background-image: url("../img/section-1/campfire_jam_home.png");
+         background-position: center;
+         background-size: cover;
+         height: 225px;
+      }
+
+      >#friends {
+         grid-area: friends;
+         background-image: url("../img/section-1/make_new_friends.png");
+         background-position: center;
+         background-size: cover;
+         height: 225px;
+      }
+
+      >#zone {
+         grid-area: zone;
+         background-image: url("../img/section-1/comfort_zone.png");
+         background-position: center;
+         background-size: cover;
+         height: 225px;
+      }
+   }
+
+   >#container-3 {
+      display: grid;
+      grid-template-columns: 20% auto 20%;
+      grid-template-areas:
+         ". history ."
+         ". stuff ."
+         ". more .";
+      margin-bottom: 50px;
+
+      >h1 {
+         grid-area: history;
+         font-family: 'Trattatello', cursive;
+         color: $green;
+         font-size: remcalc(48);
+         text-align: center;
+         margin-bottom: 22px;
+      }
+
+      >p {
+         grid-area: stuff;
+         font-family: 'Gill Sans', sans-serif;
+         color: $green;
+         font-size: remcalc(21);
+         text-align: center;
+         margin-bottom: 50px;
+      }
+
+      >h2 {
+         grid-area: more;
+         font-family: 'Trattatello', cursive;
+         color: $darkgreen;
+         font-size: remcalc(36);
+         text-align: center;
+         background-color: $orange;
+         border-radius: 8px;
+         width: 310px;
+         height: 40px;
+         padding-top: 10px;
+         margin: 0 auto;
+      }
+   }
+
+   >#container-4 {
+      display: grid;
+      background-image: url("../img/section-1/slideshow_photo.png");
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 50px;
+
+      >h1 {
+         font-family: 'Trattatello', cursive;
+         color: $darkgreen;
+         font-size: remcalc(48);
+         text-align: center;
+         margin: auto;
+      }
+   }
+}

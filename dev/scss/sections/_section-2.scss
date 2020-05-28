@@ -36,8 +36,6 @@
             font-size: remcalc(60);
             color: $white;
             background-color: $lightgreen;
-
-            grid-area: title;
          }
 
          >h2 {
@@ -48,7 +46,6 @@
             background-color: $lightgreen;
             text-align: right;
 
-            grid-area: caption;
          }
       }
    }

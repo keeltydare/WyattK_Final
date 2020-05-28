@@ -524,16 +524,14 @@ textarea {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B;
-      grid-area: title; }
+      background-color: #61853B; }
     #section-2 > #container-2 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
       background-color: #61853B;
-      text-align: right;
-      grid-area: caption; }
+      text-align: right; }
   #section-2 > #container-3 {
     background-image: url("../img/section-2/ziplining.png");
     background-position: center;

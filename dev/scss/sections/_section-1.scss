@@ -18,7 +18,7 @@
 
       >h1 {
          grid-area: header;
-         font-family: "Trattatello", cursive;
+         font-family: 'Vollkorn SC', serif;
          font-size: remcalc(60);
          text-align: center;
          color: $white;
@@ -37,7 +37,7 @@
 
          >h3 {
             background-color: $lightgreen;
-            font-family: "Gill Sans", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: remcalc(21);
             font-weight: bold;
             text-align: center;
@@ -91,7 +91,7 @@
 
       >h1 {
          grid-area: history;
-         font-family: 'Trattatello', cursive;
+         font-family: 'Vollkorn SC', serif;
          color: $green;
          font-size: remcalc(48);
          text-align: center;
@@ -100,7 +100,7 @@
 
       >p {
          grid-area: stuff;
-         font-family: 'Gill Sans', sans-serif;
+         font-family: 'Montserrat', sans-serif;
          color: $green;
          font-size: remcalc(21);
          text-align: center;
@@ -109,7 +109,7 @@
 
       >h2 {
          grid-area: more;
-         font-family: 'Trattatello', cursive;
+         font-family: 'Vollkorn SC', serif;
          color: $darkgreen;
          font-size: remcalc(36);
          text-align: center;
@@ -131,7 +131,7 @@
       margin-bottom: 50px;
 
       >h1 {
-         font-family: 'Trattatello', cursive;
+         font-family: 'Vollkorn SC', serif;
          color: $darkgreen;
          font-size: remcalc(48);
          text-align: center;

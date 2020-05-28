@@ -320,6 +320,12 @@ template {
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: 'Vollkorn SC', serif; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 /* =============
     Buttons
 ============= */
@@ -348,10 +354,13 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
   #header > nav > ul > li {
-    font-family: 'Trattatello', sans-serif;
+    font-family: 'Vollkorn SC', serif;
     font-size: remcalc(16);
     color: #0F1509;
     text-align: center; }
+    #header > nav > ul > li > #logo {
+      height: 105px;
+      padding: 10px; }
 
 /* =============
     Footer
@@ -372,7 +381,7 @@ textarea {
     #footer > #container-1 > #location {
       grid-area: location; }
     #footer > #container-1 > div > h4 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(18);
       color: #303F18; }
   #footer #container-2 {
@@ -388,7 +397,7 @@ textarea {
     #footer #container-2 > div > #facebook {
       grid-area: face; }
     #footer #container-2 > div > h4 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(18);
       color: #303F18;
       text-align: center; }
@@ -409,7 +418,7 @@ textarea {
     margin-bottom: 50px; }
     #section-1 > #container-1 > h1 {
       grid-area: header;
-      font-family: "Trattatello", cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       text-align: center;
       color: #fff;
@@ -423,7 +432,7 @@ textarea {
       margin: 0 10px; }
       #section-1 > #container-2 > div > h3 {
         background-color: #61853B;
-        font-family: "Gill Sans", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: remcalc(21);
         font-weight: bold;
         text-align: center;
@@ -461,21 +470,21 @@ textarea {
     margin-bottom: 50px; }
     #section-1 > #container-3 > h1 {
       grid-area: history;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       color: #303F18;
       font-size: remcalc(48);
       text-align: center;
       margin-bottom: 22px; }
     #section-1 > #container-3 > p {
       grid-area: stuff;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: #303F18;
       font-size: remcalc(21);
       text-align: center;
       margin-bottom: 50px; }
     #section-1 > #container-3 > h2 {
       grid-area: more;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       color: #0F1509;
       font-size: remcalc(36);
       text-align: center;
@@ -493,7 +502,7 @@ textarea {
     height: 400px;
     margin-bottom: 50px; }
     #section-1 > #container-4 > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       color: #0F1509;
       font-size: remcalc(48);
       text-align: center;
@@ -507,7 +516,7 @@ textarea {
   #section-2 > #container-1 {
     margin-bottom: 50px; }
     #section-2 > #container-1 > h1 {
-      font-family: "Trattatello", cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       text-align: center;
       color: #303F18; }
@@ -521,12 +530,12 @@ textarea {
     #section-2 > #container-2 > aside {
       grid-area: icon; }
     #section-2 > #container-2 > div > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B; }
     #section-2 > #container-2 > div > h2 {
-      font-family: 'Gill-Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
@@ -540,13 +549,13 @@ textarea {
     margin-bottom: 50px;
     display: grid; }
     #section-2 > #container-3 > div > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B;
       text-align: right; }
     #section-2 > #container-3 > div > h2 {
-      font-family: 'Gill-Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
@@ -559,12 +568,12 @@ textarea {
     margin-bottom: 50px;
     display: grid; }
     #section-2 > #container-4 > div > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B; }
     #section-2 > #container-4 > div > h2 {
-      font-family: 'Gill-Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
@@ -578,13 +587,13 @@ textarea {
     margin-bottom: 50px;
     display: grid; }
     #section-2 > #container-5 > div > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B;
       text-align: right; }
     #section-2 > #container-5 > div > h2 {
-      font-family: 'Gill-Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
@@ -597,12 +606,12 @@ textarea {
     margin-bottom: 50px;
     display: grid; }
     #section-2 > #container-6 > div > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B; }
     #section-2 > #container-6 > div > h2 {
-      font-family: 'Gill-Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
@@ -617,12 +626,12 @@ textarea {
   #section-3 > #container-1 {
     margin-bottom: 62px; }
     #section-3 > #container-1 > h1 {
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       text-align: center;
       color: #303F18; }
     #section-3 > #container-1 > h4 {
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(20);
       text-align: center;
       color: #303F18; }
@@ -636,17 +645,17 @@ textarea {
       margin-right: 20px; }
     #section-3 > #container-2 > div > h2 {
       grid-area: name;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-2 > div > h3 {
       grid-area: hometown;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-2 > div > h5 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-3 {
@@ -660,17 +669,17 @@ textarea {
       margin-left: 20px; }
     #section-3 > #container-3 > div > h2 {
       grid-area: name;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-3 > div > h3 {
       grid-area: hometown;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-3 > div > h5 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-4 {
@@ -683,17 +692,17 @@ textarea {
       margin-right: 20px; }
     #section-3 > #container-4 > div > h2 {
       grid-area: name;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-4 > div > h3 {
       grid-area: hometown;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-4 > div > h5 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-5 {
@@ -707,17 +716,17 @@ textarea {
       margin-left: 20px; }
     #section-3 > #container-5 > div > h2 {
       grid-area: name;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-5 > div > h3 {
       grid-area: hometown;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-5 > div > h5 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-6 {
@@ -729,17 +738,17 @@ textarea {
       margin-right: 20px; }
     #section-3 > #container-6 > div > h2 {
       grid-area: name;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-6 > div > h3 {
       grid-area: hometown;
-      font-family: 'Trattatello', cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-6 > div > h5 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
 
@@ -749,7 +758,7 @@ textarea {
 #section-4 {
   margin: 0 5% 100px; }
   #section-4 > #container-1 > h1 {
-    font-family: "Trattatello", cursive;
+    font-family: 'Vollkorn SC', serif;
     font-size: remcalc(60);
     text-align: center;
     color: #303F18; }
@@ -763,12 +772,12 @@ textarea {
       grid-area: photo; }
     #section-4 > #container-2 > div > h2 {
       grid-area: header;
-      font-family: "Trattatello", cursive;
+      font-family: 'Vollkorn SC', serif;
       font-size: remcalc(36);
       color: #303F18; }
     #section-4 > #container-2 > div > h3 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       color: #303F18; }
   #section-4 > #container-3 {
@@ -781,7 +790,7 @@ textarea {
       grid-area: photo; }
     #section-4 > #container-3 > div > h3 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       color: #303F18; }
   #section-4 > #container-4 {
@@ -794,7 +803,7 @@ textarea {
       grid-area: photo; }
     #section-4 > #container-4 > div > h3 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       color: #303F18; }
   #section-4 > #container-5 {
@@ -807,7 +816,7 @@ textarea {
       grid-area: photo; }
     #section-4 > #container-5 > div > h3 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       color: #303F18; }
   #section-4 > #container-6 {
@@ -820,6 +829,6 @@ textarea {
       grid-area: photo; }
     #section-4 > #container-6 > div > h3 {
       grid-area: info;
-      font-family: 'Gill Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       color: #303F18; }

@@ -525,7 +525,6 @@ textarea {
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B;
-      text-align: left;
       grid-area: title; }
     #section-2 > #container-2 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
@@ -553,8 +552,7 @@ textarea {
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B;
-      text-align: left; }
+      background-color: #61853B; }
   #section-2 > #container-4 {
     background-image: url("../img/section-2/archery.png");
     background-position: center;
@@ -566,8 +564,7 @@ textarea {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B;
-      text-align: left; }
+      background-color: #61853B; }
     #section-2 > #container-4 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
@@ -593,8 +590,7 @@ textarea {
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B;
-      text-align: left; }
+      background-color: #61853B; }
   #section-2 > #container-6 {
     background-image: url("../img/section-2/campfire_jam.png");
     background-position: center;
@@ -606,8 +602,7 @@ textarea {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B;
-      text-align: left; }
+      background-color: #61853B; }
     #section-2 > #container-6 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);

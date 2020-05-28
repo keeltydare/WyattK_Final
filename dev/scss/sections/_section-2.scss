@@ -1,3 +1,143 @@
 /* =============
    Section 2
 ============= */
+
+#section-2 {
+   margin-bottom: 100px;
+
+   >#container-1 {
+      margin-bottom: 50px;
+
+      >h1 {
+         font-family: "Trattatello", cursive;
+         font-size: remcalc(60);
+         text-align: center;
+         color: $green;
+      }
+   }
+
+   >#container-2 {
+      background-image: url("../img/section-2/hiking.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 50px;
+
+      >div{
+         >h1{
+            font-family: 'Trattatello', cursive;
+            font-size: remcalc(60);
+            color: $white;
+            background-color: $lightgreen;
+         }
+
+         >h2{
+            font-family: 'Gill-Sans', sans-serif;
+            font-size: remcalc(21);
+            font-weight: 400;
+            color: $white;
+            background-color: $lightgreen;
+         }
+      }
+   }
+
+   >#container-3{
+      background-image: url("../img/section-2/ziplining.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 50px;
+
+      >div{
+         >h1{
+            font-family: 'Trattatello', cursive;
+            font-size: remcalc(60);
+            color: $white;
+            background-color: $lightgreen;
+         }
+
+         >h2{
+            font-family: 'Gill-Sans', sans-serif;
+            font-size: remcalc(21);
+            font-weight: 400;
+            color: $white;
+            background-color: $lightgreen;
+         }
+      }
+   }
+
+   >#container-4{
+      background-image: url("../img/section-2/archery.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 50px;
+
+      >div{
+         >h1{
+            font-family: 'Trattatello', cursive;
+            font-size: remcalc(60);
+            color: $white;
+            background-color: $lightgreen;
+         }
+
+         >h2{
+            font-family: 'Gill-Sans', sans-serif;
+            font-size: remcalc(21);
+            font-weight: 400;
+            color: $white;
+            background-color: $lightgreen;
+         }
+      }
+   }
+
+   >#container-5{
+      background-image: url("../img/section-2/fishing.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 50px;
+
+      >div{
+         >h1{
+            font-family: 'Trattatello', cursive;
+            font-size: remcalc(60);
+            color: $white;
+            background-color: $lightgreen;
+         }
+
+         >h2{
+            font-family: 'Gill-Sans', sans-serif;
+            font-size: remcalc(21);
+            font-weight: 400;
+            color: $white;
+            background-color: $lightgreen;
+         }
+      }
+   }
+
+   >#container-6{
+      background-image: url("../img/section-2/campfire_jam.png");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 50px;
+
+      >div{
+         >h1{
+            font-family: 'Trattatello', cursive;
+            font-size: remcalc(60);
+            color: $white;
+            background-color: $lightgreen;
+         }
+
+         >h2{
+            font-family: 'Gill-Sans', sans-serif;
+            font-size: remcalc(21);
+            font-weight: 400;
+            color: $white;
+            background-color: $lightgreen;
+         }
+      }
+   }
+}

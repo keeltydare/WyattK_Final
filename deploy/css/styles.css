@@ -344,9 +344,55 @@ textarea {
 /* =============
     Header
 ============= */
+#header > nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  #header > nav > ul > li {
+    font-family: 'Trattatello', sans-serif;
+    font-size: remcalc(16);
+    color: #0F1509;
+    text-align: center; }
+
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #F6931D;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  #footer > #container-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "logo place" "logo location"; }
+    #footer > #container-1 > #logo {
+      grid-area: logo;
+      padding: 5px; }
+    #footer > #container-1 > #place {
+      grid-area: place; }
+    #footer > #container-1 > #location {
+      grid-area: location; }
+    #footer > #container-1 > div > h4 {
+      font-family: 'Trattatello', cursive;
+      font-size: remcalc(18);
+      color: #303F18; }
+  #footer #container-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "contact follow follow" "contact insta face"; }
+    #footer #container-2 > div > #contact {
+      grid-area: contact; }
+    #footer #container-2 > div > #follow {
+      grid-area: follow; }
+    #footer #container-2 > div > #instagram {
+      grid-area: insta; }
+    #footer #container-2 > div > #facebook {
+      grid-area: face; }
+    #footer #container-2 > div > h4 {
+      font-family: 'Trattatello', cursive;
+      font-size: remcalc(18);
+      color: #303F18;
+      text-align: center; }
+
 /* =============
    Section 1
 ============= */
@@ -381,9 +427,9 @@ textarea {
         font-size: remcalc(21);
         font-weight: bold;
         text-align: center;
-        height: 72px;
         color: #fff;
-        padding: 0 25px; }
+        padding: 0 25px;
+        margin: 80px 0; }
     #section-1 > #container-2 > #climbing {
       grid-area: climbing;
       background-image: url("../img/section-1/climbing_jacksons_peak.png");
@@ -470,92 +516,111 @@ textarea {
     background-position: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid; }
+    #section-2 > #container-2 > aside {
+      grid-area: icon; }
     #section-2 > #container-2 > div > h1 {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: left;
+      grid-area: title; }
     #section-2 > #container-2 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: right;
+      grid-area: caption; }
   #section-2 > #container-3 {
     background-image: url("../img/section-2/ziplining.png");
     background-position: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid; }
     #section-2 > #container-3 > div > h1 {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: right; }
     #section-2 > #container-3 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: left; }
   #section-2 > #container-4 {
     background-image: url("../img/section-2/archery.png");
     background-position: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid; }
     #section-2 > #container-4 > div > h1 {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: left; }
     #section-2 > #container-4 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: right; }
   #section-2 > #container-5 {
     background-image: url("../img/section-2/fishing.png");
     background-position: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid; }
     #section-2 > #container-5 > div > h1 {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: right; }
     #section-2 > #container-5 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: left; }
   #section-2 > #container-6 {
     background-image: url("../img/section-2/campfire_jam.png");
     background-position: center;
     background-size: cover;
     height: 300px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid; }
     #section-2 > #container-6 > div > h1 {
       font-family: 'Trattatello', cursive;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: left; }
     #section-2 > #container-6 > div > h2 {
       font-family: 'Gill-Sans', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      text-align: right; }
 
 /* =============
    Section 3
 ============= */
 #section-3 {
-  margin: 0 35px 100px; }
+  margin: 0 5% 100px; }
   #section-3 > #container-1 {
     margin-bottom: 62px; }
     #section-3 > #container-1 > h1 {
@@ -569,105 +634,199 @@ textarea {
       text-align: center;
       color: #303F18; }
   #section-3 > #container-2 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo name" "photo hometown" "photo hometown" "photo info"; }
+    #section-3 > #container-2 > aside {
+      grid-area: photo;
+      margin-right: 20px; }
     #section-3 > #container-2 > div > h2 {
+      grid-area: name;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-2 > div > h3 {
+      grid-area: hometown;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-2 > div > h5 {
+      grid-area: info;
       font-family: 'Gill Sans', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-3 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "name photo" "hometown photo" "hometown photo" "info photo";
+    text-align: right; }
+    #section-3 > #container-3 > aside {
+      grid-area: photo;
+      margin-left: 20px; }
     #section-3 > #container-3 > div > h2 {
+      grid-area: name;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-3 > div > h3 {
+      grid-area: hometown;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-3 > div > h5 {
+      grid-area: info;
       font-family: 'Gill Sans', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-4 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo name" "photo hometown" "photo hometown" "photo info"; }
+    #section-3 > #container-4 > aside {
+      grid-area: photo;
+      margin-right: 20px; }
     #section-3 > #container-4 > div > h2 {
+      grid-area: name;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-4 > div > h3 {
+      grid-area: hometown;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-4 > div > h5 {
+      grid-area: info;
       font-family: 'Gill Sans', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
   #section-3 > #container-5 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "name photo" "hometown photo" "hometown photo" "info photo";
+    text-align: right; }
+    #section-3 > #container-5 > aside {
+      grid-area: photo;
+      margin-left: 20px; }
     #section-3 > #container-5 > div > h2 {
+      grid-area: name;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(36);
       color: #303F18; }
     #section-3 > #container-5 > div > h3 {
+      grid-area: hometown;
       font-family: 'Trattatello', cursive;
       font-size: remcalc(21);
       color: #303F18; }
     #section-3 > #container-5 > div > h5 {
+      grid-area: info;
       font-family: 'Gill Sans', sans-serif;
       font-size: remcalc(18);
       color: #303F18; }
-  #section-3 > #container-6 > div > h2 {
-    font-family: 'Trattatello', cursive;
-    font-size: remcalc(36);
-    color: #303F18; }
-  #section-3 > #container-6 > div > h3 {
-    font-family: 'Trattatello', cursive;
-    font-size: remcalc(21);
-    color: #303F18; }
-  #section-3 > #container-6 > div > h5 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(18);
-    color: #303F18; }
+  #section-3 > #container-6 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo name" "photo hometown" "photo hometown" "photo info"; }
+    #section-3 > #container-6 > aside {
+      grid-area: photo;
+      margin-right: 20px; }
+    #section-3 > #container-6 > div > h2 {
+      grid-area: name;
+      font-family: 'Trattatello', cursive;
+      font-size: remcalc(36);
+      color: #303F18; }
+    #section-3 > #container-6 > div > h3 {
+      grid-area: hometown;
+      font-family: 'Trattatello', cursive;
+      font-size: remcalc(21);
+      color: #303F18; }
+    #section-3 > #container-6 > div > h5 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(18);
+      color: #303F18; }
 
 /* =============
    Section 4
 ============= */
 #section-4 {
-  margin-bottom: 100px; }
+  margin: 0 5% 100px; }
   #section-4 > #container-1 > h1 {
     font-family: "Trattatello", cursive;
     font-size: remcalc(60);
     text-align: center;
     color: #303F18; }
-  #section-4 > #container-2 > div > h2 {
-    font-family: "Trattatello", cursive;
-    font-size: remcalc(36);
-    color: #303F18; }
-  #section-4 > #container-2 > div > h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(21);
-    color: #303F18; }
-  #section-4 > #container-3 > div > h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(21);
-    color: #303F18; }
-  #section-4 > #container-4 > div > h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(21);
-    color: #303F18; }
-  #section-4 > #container-5 > div > h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(21);
-    color: #303F18; }
-  #section-4 > #container-6 > div > h3 {
-    font-family: 'Gill Sans', sans-serif;
-    font-size: remcalc(21);
-    color: #303F18; }
+  #section-4 > #container-2 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: " photo header " " photo info "; }
+    #section-4 > #container-2 > aside {
+      margin-right: 20px;
+      grid-area: photo; }
+    #section-4 > #container-2 > div > h2 {
+      grid-area: header;
+      font-family: "Trattatello", cursive;
+      font-size: remcalc(36);
+      color: #303F18; }
+    #section-4 > #container-2 > div > h3 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(21);
+      color: #303F18; }
+  #section-4 > #container-3 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: " info photo "; }
+    #section-4 > #container-3 > aside {
+      margin-left: 20px;
+      grid-area: photo; }
+    #section-4 > #container-3 > div > h3 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(21);
+      color: #303F18; }
+  #section-4 > #container-4 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: " photo header " " photo info "; }
+    #section-4 > #container-4 > aside {
+      margin-right: 20px;
+      grid-area: photo; }
+    #section-4 > #container-4 > div > h3 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(21);
+      color: #303F18; }
+  #section-4 > #container-5 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: " info photo "; }
+    #section-4 > #container-5 > aside {
+      margin-left: 20px;
+      grid-area: photo; }
+    #section-4 > #container-5 > div > h3 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(21);
+      color: #303F18; }
+  #section-4 > #container-6 {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: " photo info "; }
+    #section-4 > #container-6 > aside {
+      margin-right: 20px;
+      grid-area: photo; }
+    #section-4 > #container-6 > div > h3 {
+      grid-area: info;
+      font-family: 'Gill Sans', sans-serif;
+      font-size: remcalc(21);
+      color: #303F18; }

@@ -1,3 +1,70 @@
 /* =============
     Footer
 ============= */
+#footer {
+    background-color: $orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    >#container-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "logo place"
+            "logo location";
+
+        >#logo {
+            grid-area: logo;
+            padding: 5px;
+        }
+
+        >#place {
+            grid-area: place;
+        }
+
+        >#location {
+            grid-area: location;
+        }
+
+        >div {
+            >h4 {
+                font-family: 'Trattatello', cursive;
+                font-size: remcalc(18);
+                color: $green;
+            }
+        }
+    }
+
+    #container-2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:
+            "contact follow follow"
+            "contact insta face";
+
+        >div {
+            >#contact {
+                grid-area: contact;
+            }
+
+            >#follow {
+                grid-area: follow;
+            }
+
+            >#instagram {
+                grid-area: insta;
+            }
+
+            >#facebook {
+                grid-area: face;
+            }
+
+            >h4 {
+                font-family: 'Trattatello', cursive;
+                font-size: remcalc(18);
+                color: $green;
+                text-align: center;
+            }
+        }
+    }
+}

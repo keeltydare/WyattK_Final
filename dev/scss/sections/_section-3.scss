@@ -2,7 +2,7 @@
    Section 3
 ============= */
 #section-3 {
-   margin: 0 35px 100px;
+   margin: 0 5% 100px;
 
    >#container-1 {
       margin-bottom: 62px;
@@ -24,21 +24,36 @@
 
    >#container-2 {
       margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+         "photo name"
+         "photo hometown"
+         "photo hometown"
+         "photo info";
+
+      >aside {
+         grid-area: photo;
+         margin-right: 20px;
+      }
 
       >div {
          >h2 {
+            grid-area: name;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(36);
             color: $green;
          }
 
          >h3 {
+            grid-area: hometown;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(21);
             color: $green;
          }
 
          >h5 {
+            grid-area: info;
             font-family: 'Gill Sans', sans-serif;
             font-size: remcalc(18);
             color: $green;
@@ -48,21 +63,38 @@
 
    >#container-3 {
       margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+         "name photo"
+         "hometown photo"
+         "hometown photo"
+         "info photo";
+
+      text-align: right;
+
+      >aside {
+         grid-area: photo;
+         margin-left: 20px;
+      }
 
       >div {
          >h2 {
+            grid-area: name;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(36);
             color: $green;
          }
 
          >h3 {
+            grid-area: hometown;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(21);
             color: $green;
          }
 
          >h5 {
+            grid-area: info;
             font-family: 'Gill Sans', sans-serif;
             font-size: remcalc(18);
             color: $green;
@@ -72,21 +104,36 @@
 
    >#container-4 {
       margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+         "photo name"
+         "photo hometown"
+         "photo hometown"
+         "photo info";
+
+      >aside {
+         grid-area: photo;
+         margin-right: 20px;
+      }
 
       >div {
          >h2 {
+            grid-area: name;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(36);
             color: $green;
          }
 
          >h3 {
+            grid-area: hometown;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(21);
             color: $green;
          }
 
          >h5 {
+            grid-area: info;
             font-family: 'Gill Sans', sans-serif;
             font-size: remcalc(18);
             color: $green;
@@ -96,21 +143,38 @@
 
    >#container-5 {
       margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+         "name photo"
+         "hometown photo"
+         "hometown photo"
+         "info photo";
+
+      text-align: right;
+
+      >aside {
+         grid-area: photo;
+         margin-left: 20px;
+      }
 
       >div {
          >h2 {
+            grid-area: name;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(36);
             color: $green;
          }
 
          >h3 {
+            grid-area: hometown;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(21);
             color: $green;
          }
 
          >h5 {
+            grid-area: info;
             font-family: 'Gill Sans', sans-serif;
             font-size: remcalc(18);
             color: $green;
@@ -119,21 +183,36 @@
    }
 
    >#container-6 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+         "photo name"
+         "photo hometown"
+         "photo hometown"
+         "photo info";
+
+      >aside {
+         grid-area: photo;
+         margin-right: 20px;
+      }
 
       >div {
          >h2 {
+            grid-area: name;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(36);
             color: $green;
          }
 
          >h3 {
+            grid-area: hometown;
             font-family: 'Trattatello', cursive;
             font-size: remcalc(21);
             color: $green;
          }
 
          >h5 {
+            grid-area: info;
             font-family: 'Gill Sans', sans-serif;
             font-size: remcalc(18);
             color: $green;

@@ -1,3 +1,20 @@
 /* =============
     Header
 ============= */
+
+#header {
+
+    >nav {
+        >ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            >li {
+                font-family: 'Trattatello', sans-serif;
+                font-size: remcalc(16);
+                color: $darkgreen;
+                text-align: center;
+            }
+        }
+    }
+}

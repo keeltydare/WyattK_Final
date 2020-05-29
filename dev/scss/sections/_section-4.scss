@@ -5,6 +5,7 @@
 #section-4 {
    margin: 0 5% 100px;
 
+
    >#container-1 {
       >h1 {
          font-family: 'Vollkorn SC', serif;
@@ -29,16 +30,12 @@
       >div {
          grid-area: info;
          >h2 {
-            display: flex;
-            align-items: center;
             font-family: 'Vollkorn SC', serif;
             font-size: rem-calc(36);
             color: $green;
          }
 
          >h3 {
-            display: flex;
-            align-items: center;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             color: $green;
@@ -60,9 +57,6 @@
       >div {
          grid-area: info;
          >h3 {
-            display: flex;
-            align-items: center;
-            
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             color: $green;
@@ -76,7 +70,6 @@
       display: grid;
       grid-template-columns: 1fr 3fr;
       grid-template-areas:
-         " photo header "
          " photo info ";
 
       >aside {
@@ -87,8 +80,6 @@
       >div {
          grid-area: info;
          >h3 {
-            display: flex;
-            align-items: center;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             color: $green;
@@ -110,8 +101,6 @@
       >div {
          grid-area: info;
          >h3 {
-            display: flex;
-            align-items: center;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             color: $green;
@@ -134,8 +123,6 @@
       >div {
          grid-area: info;
          >h3 {
-            display: flex;
-            align-items: center;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             color: $green;

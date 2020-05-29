@@ -4,25 +4,27 @@
 #section-3 {
    margin: 0 5% 100px;
 
+
    >#container-1 {
       margin-bottom: 62px;
 
       >h1 {
          font-family: 'Vollkorn SC', serif;
-         font-size: remcalc(60);
+         font-size: rem-calc(60);
          text-align: center;
          color: $green;
       }
 
       >h4 {
          font-family: 'Montserrat', sans-serif;
-         font-size: remcalc(20);
+         font-size: rem-calc(20);
          text-align: center;
          color: $green;
       }
    }
 
-   >#container-2 {
+
+   >.staff-left {
       margin-bottom: 50px;
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -31,6 +33,7 @@
          "photo hometown"
          "photo hometown"
          "photo info";
+
 
       >aside {
          grid-area: photo;
@@ -41,27 +44,27 @@
          >h2 {
             grid-area: name;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(36);
+            font-size: rem-calc(36);
             color: $green;
          }
 
          >h3 {
             grid-area: hometown;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(21);
+            font-size: rem-calc(21);
             color: $green;
          }
 
          >h5 {
             grid-area: info;
             font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(18);
+            font-size: rem-calc(18);
             color: $green;
          }
       }
    }
 
-   >#container-3 {
+   >.staff-right {
       margin-bottom: 50px;
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -82,141 +85,58 @@
          >h2 {
             grid-area: name;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(36);
+            font-size: rem-calc(36);
             color: $green;
          }
 
          >h3 {
             grid-area: hometown;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(21);
+            font-size: rem-calc(21);
             color: $green;
          }
 
          >h5 {
             grid-area: info;
             font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(18);
+            font-size: rem-calc(18);
             color: $green;
          }
       }
+
    }
 
-   >#container-4 {
+   @media screen and (max-width: 700px) {
+
       margin-bottom: 50px;
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-template-areas:
-         "photo name"
-         "photo hometown"
-         "photo hometown"
-         "photo info";
+      grid-template-columns: 100%;
 
       >aside {
-         grid-area: photo;
-         margin-right: 20px;
-      }
-
-      >div {
-         >h2 {
-            grid-area: name;
-            font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(36);
-            color: $green;
-         }
-
-         >h3 {
-            grid-area: hometown;
-            font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(21);
-            color: $green;
-         }
-
-         >h5 {
-            grid-area: info;
-            font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(18);
-            color: $green;
-         }
-      }
-   }
-
-   >#container-5 {
-      margin-bottom: 50px;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-         "name photo"
-         "hometown photo"
-         "hometown photo"
-         "info photo";
-
-      text-align: right;
-
-      >aside {
-         grid-area: photo;
          margin-left: 20px;
       }
 
       >div {
+
          >h2 {
-            grid-area: name;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(36);
+            font-size: rem-calc(36);
             color: $green;
          }
 
          >h3 {
-            grid-area: hometown;
             font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(21);
+            font-size: rem-calc(21);
             color: $green;
          }
 
          >h5 {
-            grid-area: info;
             font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(18);
+            font-size: rem-calc(18);
             color: $green;
          }
       }
+
    }
 
-   >#container-6 {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-template-areas:
-         "photo name"
-         "photo hometown"
-         "photo hometown"
-         "photo info";
-
-      >aside {
-         grid-area: photo;
-         margin-right: 20px;
-      }
-
-      >div {
-         >h2 {
-            grid-area: name;
-            font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(36);
-            color: $green;
-         }
-
-         >h3 {
-            grid-area: hometown;
-            font-family: 'Vollkorn SC', serif;
-            font-size: remcalc(21);
-            color: $green;
-         }
-
-         >h5 {
-            grid-area: info;
-            font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(18);
-            color: $green;
-         }
-      }
-   }
 }

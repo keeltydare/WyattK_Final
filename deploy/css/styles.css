@@ -350,17 +350,30 @@ textarea {
 /* =============
     Header
 ============= */
-#header > nav > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-  #header > nav > ul > li {
-    font-family: 'Vollkorn SC', serif;
-    font-size: remcalc(16);
-    color: #0F1509;
-    text-align: center; }
+#header {
+  background-color: #fff;
+  margin: 20px 0 50px; }
+  #header > nav > ul {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    padding-inline-start: 0px; }
+    #header > nav > ul > li > h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Vollkorn SC', serif;
+      font-size: 1rem;
+      color: #0F1509;
+      text-align: center;
+      background-color: #61853B;
+      margin: 20px 10px;
+      height: 70px;
+      border-radius: 10px; }
     #header > nav > ul > li > #logo {
-      height: 105px;
-      padding: 10px; }
+      height: 100px;
+      margin: 10px 0; }
 
 /* =============
     Footer
@@ -368,7 +381,8 @@ textarea {
 #footer {
   background-color: #F6931D;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0; }
   #footer > #container-1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -376,6 +390,8 @@ textarea {
     #footer > #container-1 > #logo {
       grid-area: logo;
       padding: 5px; }
+      #footer > #container-1 > #logo > #camp {
+        height: 100px; }
     #footer > #container-1 > #place {
       grid-area: place; }
     #footer > #container-1 > #location {
@@ -388,17 +404,19 @@ textarea {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: "contact follow follow" "contact insta face"; }
-    #footer #container-2 > div > #contact {
+    #footer #container-2 > #contact {
       grid-area: contact; }
-    #footer #container-2 > div > #follow {
+    #footer #container-2 > #follow {
       grid-area: follow; }
-    #footer #container-2 > div > #instagram {
-      grid-area: insta; }
-    #footer #container-2 > div > #facebook {
-      grid-area: face; }
+    #footer #container-2 > #instagram {
+      grid-area: insta;
+      text-align: center; }
+    #footer #container-2 > #facebook {
+      grid-area: face;
+      text-align: center; }
     #footer #container-2 > div > h4 {
       font-family: 'Vollkorn SC', serif;
-      font-size: remcalc(18);
+      font-size: 1.125rem;
       color: #303F18;
       text-align: center; }
 
@@ -419,21 +437,21 @@ textarea {
     #section-1 > #container-1 > h1 {
       grid-area: header;
       font-family: 'Vollkorn SC', serif;
-      font-size: remcalc(60);
+      font-size: 3.75rem;
       text-align: center;
       color: #fff;
       margin: auto; }
   #section-1 > #container-2 {
+    margin-bottom: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: grid;
-    grid-template-areas: "climbing jam friends zone";
-    margin-bottom: 50px; }
+    grid-template-areas: "climbing jam friends zone"; }
     #section-1 > #container-2 > div {
-      margin: 0 10px; }
+      margin: 10px; }
       #section-1 > #container-2 > div > h3 {
         background-color: #61853B;
         font-family: 'Montserrat', sans-serif;
-        font-size: remcalc(21);
+        font-size: 1.3125rem;
         font-weight: bold;
         text-align: center;
         color: #fff;
@@ -472,21 +490,21 @@ textarea {
       grid-area: history;
       font-family: 'Vollkorn SC', serif;
       color: #303F18;
-      font-size: remcalc(48);
+      font-size: 3rem;
       text-align: center;
       margin-bottom: 22px; }
     #section-1 > #container-3 > p {
       grid-area: stuff;
       font-family: 'Montserrat', sans-serif;
       color: #303F18;
-      font-size: remcalc(21);
+      font-size: 1.3125rem;
       text-align: center;
       margin-bottom: 50px; }
     #section-1 > #container-3 > h2 {
       grid-area: more;
       font-family: 'Vollkorn SC', serif;
       color: #0F1509;
-      font-size: remcalc(36);
+      font-size: 2.25rem;
       text-align: center;
       background-color: #F6931D;
       border-radius: 8px;
@@ -501,12 +519,15 @@ textarea {
     background-size: cover;
     height: 400px;
     margin-bottom: 50px; }
-    #section-1 > #container-4 > h1 {
-      font-family: 'Vollkorn SC', serif;
-      color: #0F1509;
-      font-size: remcalc(48);
-      text-align: center;
-      margin: auto; }
+    #section-1 > #container-4 > div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #section-1 > #container-4 > div > h1 {
+        font-family: 'Vollkorn SC', serif;
+        color: #0F1509;
+        font-size: 3rem;
+        text-align: center; }
 
 /* =============
    Section 2
@@ -527,20 +548,20 @@ textarea {
     height: 300px;
     margin-bottom: 50px;
     display: grid; }
-    #section-2 > #container-2 > aside {
-      grid-area: icon; }
     #section-2 > #container-2 > div > h1 {
       font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      padding-left: 50px; }
     #section-2 > #container-2 > div > h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
       background-color: #61853B;
-      text-align: right; }
+      text-align: right;
+      padding-right: 50px; }
   #section-2 > #container-3 {
     background-image: url("../img/section-2/ziplining.png");
     background-position: center;
@@ -553,13 +574,15 @@ textarea {
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B;
-      text-align: right; }
+      text-align: right;
+      padding-right: 50px; }
     #section-2 > #container-3 > div > h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      padding-left: 50px; }
   #section-2 > #container-4 {
     background-image: url("../img/section-2/archery.png");
     background-position: center;
@@ -571,14 +594,16 @@ textarea {
       font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      padding-left: 50px; }
     #section-2 > #container-4 > div > h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
       background-color: #61853B;
-      text-align: right; }
+      text-align: right;
+      padding-right: 50px; }
   #section-2 > #container-5 {
     background-image: url("../img/section-2/fishing.png");
     background-position: center;
@@ -591,13 +616,15 @@ textarea {
       font-size: remcalc(60);
       color: #fff;
       background-color: #61853B;
-      text-align: right; }
+      text-align: right;
+      padding-right: 50px; }
     #section-2 > #container-5 > div > h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      padding-left: 50px; }
   #section-2 > #container-6 {
     background-image: url("../img/section-2/campfire_jam.png");
     background-position: center;
@@ -609,14 +636,16 @@ textarea {
       font-family: 'Vollkorn SC', serif;
       font-size: remcalc(60);
       color: #fff;
-      background-color: #61853B; }
+      background-color: #61853B;
+      padding-left: 50px; }
     #section-2 > #container-6 > div > h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: remcalc(21);
       font-weight: 400;
       color: #fff;
       background-color: #61853B;
-      text-align: right; }
+      text-align: right;
+      padding-right: 50px; }
 
 /* =============
    Section 3
@@ -759,27 +788,31 @@ textarea {
   margin: 0 5% 100px; }
   #section-4 > #container-1 > h1 {
     font-family: 'Vollkorn SC', serif;
-    font-size: remcalc(60);
+    font-size: 3.75rem;
     text-align: center;
     color: #303F18; }
   #section-4 > #container-2 {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: " photo header " " photo info "; }
+    grid-template-areas: " photo info"; }
     #section-4 > #container-2 > aside {
       margin-right: 20px;
       grid-area: photo; }
-    #section-4 > #container-2 > div > h2 {
-      grid-area: header;
-      font-family: 'Vollkorn SC', serif;
-      font-size: remcalc(36);
-      color: #303F18; }
-    #section-4 > #container-2 > div > h3 {
-      grid-area: info;
-      font-family: 'Montserrat', sans-serif;
-      font-size: remcalc(21);
-      color: #303F18; }
+    #section-4 > #container-2 > div {
+      grid-area: info; }
+      #section-4 > #container-2 > div > h2 {
+        display: flex;
+        align-items: center;
+        font-family: 'Vollkorn SC', serif;
+        font-size: 2.25rem;
+        color: #303F18; }
+      #section-4 > #container-2 > div > h3 {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3125rem;
+        color: #303F18; }
   #section-4 > #container-3 {
     margin-bottom: 50px;
     display: grid;
@@ -788,11 +821,14 @@ textarea {
     #section-4 > #container-3 > aside {
       margin-left: 20px;
       grid-area: photo; }
-    #section-4 > #container-3 > div > h3 {
-      grid-area: info;
-      font-family: 'Montserrat', sans-serif;
-      font-size: remcalc(21);
-      color: #303F18; }
+    #section-4 > #container-3 > div {
+      grid-area: info; }
+      #section-4 > #container-3 > div > h3 {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3125rem;
+        color: #303F18; }
   #section-4 > #container-4 {
     margin-bottom: 50px;
     display: grid;
@@ -801,11 +837,14 @@ textarea {
     #section-4 > #container-4 > aside {
       margin-right: 20px;
       grid-area: photo; }
-    #section-4 > #container-4 > div > h3 {
-      grid-area: info;
-      font-family: 'Montserrat', sans-serif;
-      font-size: remcalc(21);
-      color: #303F18; }
+    #section-4 > #container-4 > div {
+      grid-area: info; }
+      #section-4 > #container-4 > div > h3 {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3125rem;
+        color: #303F18; }
   #section-4 > #container-5 {
     margin-bottom: 50px;
     display: grid;
@@ -814,11 +853,14 @@ textarea {
     #section-4 > #container-5 > aside {
       margin-left: 20px;
       grid-area: photo; }
-    #section-4 > #container-5 > div > h3 {
-      grid-area: info;
-      font-family: 'Montserrat', sans-serif;
-      font-size: remcalc(21);
-      color: #303F18; }
+    #section-4 > #container-5 > div {
+      grid-area: info; }
+      #section-4 > #container-5 > div > h3 {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3125rem;
+        color: #303F18; }
   #section-4 > #container-6 {
     margin-bottom: 50px;
     display: grid;
@@ -827,8 +869,11 @@ textarea {
     #section-4 > #container-6 > aside {
       margin-right: 20px;
       grid-area: photo; }
-    #section-4 > #container-6 > div > h3 {
-      grid-area: info;
-      font-family: 'Montserrat', sans-serif;
-      font-size: remcalc(21);
-      color: #303F18; }
+    #section-4 > #container-6 > div {
+      grid-area: info; }
+      #section-4 > #container-6 > div > h3 {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3125rem;
+        color: #303F18; }

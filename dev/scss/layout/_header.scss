@@ -1,28 +1,43 @@
 /* =============
     Header
 ============= */
-
 #header {
+    background-color: $white;
+    margin: 20px 0 50px;
 
     >nav {
         >ul {
+            height: 100px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            padding-inline-start: 0px;
 
             >li {
-                font-family: 'Vollkorn SC', serif;
-                font-size: remcalc(16);
-                color: $darkgreen;
-                text-align: center;
 
-                >#logo{
-                 height: 105px;
-                 padding: 10px;
+
+                >h1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    font-family: 'Vollkorn SC', serif;
+                    font-size: rem-calc(16);
+                    color: $darkgreen;
+                    text-align: center;
+                    background-color: $lightgreen;
+                    margin: 20px 10px;
+                    height: 70px;
+                    border-radius: 10px;
+
                 }
+
+                >#logo {
+                    height: 100px;
+                    margin: 10px 0;
+                }
+
             }
-
-           
-
         }
     }
 }

@@ -25,17 +25,13 @@
 
       display: grid;
 
-
-      >aside {
-         grid-area: icon;
-      }
-
       >div {
          >h1 {
             font-family: 'Vollkorn SC', serif;
             font-size: remcalc(60);
             color: $white;
             background-color: $lightgreen;
+            padding-left: 50px;
          }
 
          >h2 {
@@ -45,6 +41,7 @@
             color: $white;
             background-color: $lightgreen;
             text-align: right;
+            padding-right: 50px;
 
          }
       }
@@ -66,6 +63,7 @@
             color: $white;
             background-color: $lightgreen;
             text-align: right;
+            padding-right: 50px;
          }
 
          >h2 {
@@ -74,6 +72,7 @@
             font-weight: 400;
             color: $white;
             background-color: $lightgreen;
+            padding-left: 50px;
          }
       }
    }
@@ -93,6 +92,7 @@
             font-size: remcalc(60);
             color: $white;
             background-color: $lightgreen;
+            padding-left: 50px;
          }
 
          >h2 {
@@ -102,6 +102,7 @@
             color: $white;
             background-color: $lightgreen;
             text-align: right;
+            padding-right: 50px;
          }
       }
    }
@@ -122,6 +123,7 @@
             color: $white;
             background-color: $lightgreen;
             text-align: right;
+            padding-right: 50px;
          }
 
          >h2 {
@@ -130,6 +132,7 @@
             font-weight: 400;
             color: $white;
             background-color: $lightgreen;
+            padding-left: 50px;
          }
       }
    }
@@ -149,6 +152,7 @@
             font-size: remcalc(60);
             color: $white;
             background-color: $lightgreen;
+            padding-left: 50px;
          }
 
          >h2 {
@@ -158,6 +162,7 @@
             color: $white;
             background-color: $lightgreen;
             text-align: right;
+            padding-right: 50px;
          }
       }
    }

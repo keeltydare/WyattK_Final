@@ -19,7 +19,7 @@
       >h1 {
          grid-area: header;
          font-family: 'Vollkorn SC', serif;
-         font-size: remcalc(60);
+         font-size: rem-calc(60);
          text-align: center;
          color: $white;
          margin: auto;
@@ -27,18 +27,19 @@
    }
 
    >#container-2 {
+      margin-bottom: 10px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       display: grid;
       grid-template-areas: "climbing jam friends zone";
-      margin-bottom: 50px;
+
 
       >div {
-         margin: 0 10px;
+         margin: 10px;
 
          >h3 {
             background-color: $lightgreen;
             font-family: 'Montserrat', sans-serif;
-            font-size: remcalc(21);
+            font-size: rem-calc(21);
             font-weight: bold;
             text-align: center;
             color: $white;
@@ -78,6 +79,9 @@
          background-size: cover;
          height: 225px;
       }
+
+
+
    }
 
    >#container-3 {
@@ -93,7 +97,7 @@
          grid-area: history;
          font-family: 'Vollkorn SC', serif;
          color: $green;
-         font-size: remcalc(48);
+         font-size: rem-calc(48);
          text-align: center;
          margin-bottom: 22px;
       }
@@ -102,7 +106,7 @@
          grid-area: stuff;
          font-family: 'Montserrat', sans-serif;
          color: $green;
-         font-size: remcalc(21);
+         font-size: rem-calc(21);
          text-align: center;
          margin-bottom: 50px;
       }
@@ -111,7 +115,7 @@
          grid-area: more;
          font-family: 'Vollkorn SC', serif;
          color: $darkgreen;
-         font-size: remcalc(36);
+         font-size: rem-calc(36);
          text-align: center;
          background-color: $orange;
          border-radius: 8px;
@@ -130,12 +134,18 @@
       height: 400px;
       margin-bottom: 50px;
 
-      >h1 {
-         font-family: 'Vollkorn SC', serif;
-         color: $darkgreen;
-         font-size: remcalc(48);
-         text-align: center;
-         margin: auto;
+      >div {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         >h1 {
+            font-family: 'Vollkorn SC', serif;
+            color: $darkgreen;
+            font-size: rem-calc(48);
+            text-align: center;
+
+         }
       }
    }
 }

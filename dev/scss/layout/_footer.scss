@@ -5,6 +5,7 @@
     background-color: $orange;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
 
     >#container-1 {
         display: grid;
@@ -16,6 +17,10 @@
         >#logo {
             grid-area: logo;
             padding: 5px;
+            
+            >#camp{
+                height:100px;
+            }
         }
 
         >#place {
@@ -42,29 +47,31 @@
             "contact follow follow"
             "contact insta face";
 
+        >#contact {
+            grid-area: contact;
+        }
+
+        >#follow {
+            grid-area: follow;
+        }
+
+        >#instagram {
+            grid-area: insta;
+            text-align: center;
+        }
+
+        >#facebook {
+            grid-area: face;
+            text-align: center;
+        }
+
         >div {
-            >#contact {
-                grid-area: contact;
-            }
-
-            >#follow {
-                grid-area: follow;
-            }
-
-            >#instagram {
-                grid-area: insta;
-            }
-
-            >#facebook {
-                grid-area: face;
-            }
-
             >h4 {
                 font-family: 'Vollkorn SC', serif;
-                font-size: remcalc(18);
+                font-size: rem-calc(18);
                 color: $green;
                 text-align: center;
             }
         }
     }
-}
+    }

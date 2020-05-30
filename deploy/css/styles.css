@@ -593,17 +593,17 @@ textarea {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-left: 20%; }
+    margin-left: 20%;
+    position: relative; }
     #section-2 > .title-right > .title > aside {
-      position: absolute;
-      object-position: left; }
+      position: absolute; }
     #section-2 > .title-right > .title > h1 {
       font-family: 'Vollkorn SC', serif;
       font-size: 3.75rem;
       color: #fff;
       background-color: #61853B;
       padding-left: 100px;
-      margin-left: 75px; }
+      margin-left: 50px; }
   #section-2 > .title-right > .tagline {
     display: flex;
     justify-content: left;
@@ -616,22 +616,23 @@ textarea {
       color: #fff;
       background-color: #61853B;
       text-align: right;
-      padding-right: 50px; }
+      padding: 0 50px; }
   #section-2 > .title-left > .title {
+    position: relative;
     display: flex;
     justify-content: left;
     align-items: center;
     margin-right: 20%; }
     #section-2 > .title-left > .title > aside {
       position: absolute;
-      object-position: right; }
+      right: 0; }
     #section-2 > .title-left > .title > h1 {
       font-family: 'Vollkorn SC', serif;
       font-size: 3.75rem;
       color: #fff;
       background-color: #61853B;
       padding-right: 100px;
-      margin-right: 75px; }
+      margin-right: 50px; }
   #section-2 > .title-left > .tagline {
     display: flex;
     justify-content: right;
@@ -644,7 +645,7 @@ textarea {
       color: #fff;
       background-color: #61853B;
       text-align: left;
-      padding-left: 50px; }
+      padding: 0 50px; }
 
 /* =============
    Section 3

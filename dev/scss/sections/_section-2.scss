@@ -58,33 +58,37 @@
 
    >.title-right {
       >.title {
-         display: flex;
-         justify-content: right;
-         align-items: center;
-         margin-left: 20%;
          position: relative;
+         margin-left: 20%;
 
          >aside {
             position: absolute;
+            top: 47px;
+            left:0;
+            
          }
 
          >h1 {
+            position: absolute;
             font-family: 'Vollkorn SC', serif;
             font-size: rem-calc(60);
             color: $white;
             background-color: $lightgreen;
             padding-left: 100px;
             margin-left: 50px;
+            width: 80%;
+            top: 40px;
+            right: 0;
          }
+       
       }
 
       >.tagline {
-         display: flex;
-         justify-content: left;
-         align-items: center;
-         margin-right: 20%;
+         position: relative;
+         margin-right: 30%;
 
          >h2 {
+            position: absolute;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             font-weight: 400;
@@ -92,22 +96,24 @@
             background-color: $lightgreen;
             text-align: right;
             padding: 0 50px;
+            top: 180px;
+            width: 100%;
+            
          }
       }
    }
 
    >.title-left {
+      position: relative;
       
       >.title {
          position: relative;
-         display: flex;
-         justify-content: left;
-         align-items: center;
          margin-right: 20%;
 
 
          >aside {
             position: absolute;
+            top: 47px;
             right: 0;
          }
 
@@ -116,18 +122,22 @@
             font-size: rem-calc(60);
             color: $white;
             background-color: $lightgreen;
+            text-align: right;
             padding-right: 100px;
             margin-right: 50px;
+            position: absolute;
+            width: 80%;
+            top: 40px;
+
          }
       }
 
       >.tagline {
-         display: flex;
-         justify-content: right;
-         align-items: center;
-         margin-left: 20%;
+         position: relative;
+         margin-left: 30%;
 
          >h2 {
+            position: absolute;
             font-family: 'Montserrat', sans-serif;
             font-size: rem-calc(21);
             font-weight: 400;
@@ -135,6 +145,9 @@
             background-color: $lightgreen;
             text-align: left;
             padding: 0 50px;
+            top: 180px;
+            width: 100%;
+
          }
       }
    }

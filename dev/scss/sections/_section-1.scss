@@ -128,7 +128,7 @@
          margin-bottom: 50px;
       }
 
-      >h2 {
+      .button {
          grid-area: more;
          font-family: 'Vollkorn SC', serif;
          color: $darkgreen;
@@ -140,6 +140,15 @@
          height: 40px;
          padding-top: 10px;
          margin: 0 auto;
+         cursor: pointer;
+         -webkit-transition: all .25s ease;
+         -moz-transition: all .25s ease;
+         -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+         transition: all .25s ease;
+      }
+      .button:hover{
+         background-color: $lightgreen;
       }
    }
 

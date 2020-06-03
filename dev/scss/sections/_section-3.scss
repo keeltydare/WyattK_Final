@@ -62,6 +62,22 @@
             color: $green;
          }
       }
+
+      @media screen and (max-width: 780px) {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "photo"
+         "name"
+         "hometown"
+         "hometown"
+         "info";
+
+         >aside{
+            text-align: center;
+         }
+
+      }
    }
 
    >.staff-right {
@@ -104,39 +120,22 @@
          }
       }
 
-   }
+      @media screen and (max-width: 780px) {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "photo"
+         "name"
+         "hometown"
+         "hometown"
+         "info";
 
-   @media screen and (max-width: 700px) {
+         text-align: left;
 
-      margin-bottom: 50px;
-      display: grid;
-      grid-template-columns: 100%;
+         >aside{
+            text-align: center;
+         }
 
-      >aside {
-         margin-left: 20px;
       }
-
-      >div {
-
-         >h2 {
-            font-family: 'Vollkorn SC', serif;
-            font-size: rem-calc(36);
-            color: $green;
-         }
-
-         >h3 {
-            font-family: 'Vollkorn SC', serif;
-            font-size: rem-calc(21);
-            color: $green;
-         }
-
-         >h5 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: rem-calc(18);
-            color: $green;
-         }
-      }
-
    }
-
 }

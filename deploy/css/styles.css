@@ -359,11 +359,13 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
     padding-inline-start: 0px; }
-    #header > nav > ul > li > h1 {
+    #header > nav > ul > li .button {
       display: flex;
       justify-content: center;
       align-items: center;
+      text-decoration: none;
       font-family: 'Vollkorn SC', serif;
+      font-weight: bolder;
       font-size: 1rem;
       color: #0F1509;
       text-align: center;
@@ -371,7 +373,15 @@ textarea {
       margin: 20px 10px;
       height: 70px;
       border-radius: 10px;
-      padding: 0 5px; }
+      padding: 0 5px;
+      cursor: pointer;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    #header > nav > ul > li .button:hover {
+      background-color: #F6931D; }
     #header > nav > ul > li > #logo {
       height: 100px;
       margin: 10px 0; }
@@ -510,7 +520,7 @@ textarea {
       font-size: 1.3125rem;
       text-align: center;
       margin-bottom: 50px; }
-    #section-1 > #container-3 > h2 {
+    #section-1 > #container-3 .button {
       grid-area: more;
       font-family: 'Vollkorn SC', serif;
       color: #0F1509;
@@ -521,7 +531,15 @@ textarea {
       width: 310px;
       height: 40px;
       padding-top: 10px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      cursor: pointer;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    #section-1 > #container-3 .button:hover {
+      background-color: #61853B; }
   #section-1 > #container-4 {
     display: grid;
     background-image: url("../img/section-1/slideshow_photo.png");
@@ -605,8 +623,30 @@ textarea {
       padding-left: 100px;
       margin-left: 50px;
       width: 80%;
+      white-space: nowrap;
       top: 40px;
       right: 0; }
+      @media screen and (max-width: 780px) {
+        #section-2 > .title-right > .title > h1 {
+          font-size: 3.125rem;
+          top: 50px;
+          width: 70%;
+          padding-left: 100px;
+          padding-right: 50px; } }
+      @media screen and (max-width: 690px) {
+        #section-2 > .title-right > .title > h1 {
+          font-size: 2.5rem;
+          top: 60px;
+          width: 60%; } }
+      @media screen and (max-width: 550px) {
+        #section-2 > .title-right > .title > h1 {
+          font-size: 1.875rem;
+          top: 70px;
+          padding-left: 125px;
+          padding-right: 25px; } }
+      @media screen and (min-width: 1150px) {
+        #section-2 > .title-right > .title > h1 {
+          width: 85%; } }
   #section-2 > .title-right > .tagline {
     position: relative;
     margin-right: 30%; }
@@ -620,7 +660,11 @@ textarea {
       text-align: right;
       padding: 0 50px;
       top: 180px;
-      width: 100%; }
+      width: 80%;
+      left: 0; }
+      @media screen and (max-width: 560px) {
+        #section-2 > .title-right > .tagline > h2 {
+          font-size: 1.1875rem; } }
   #section-2 > .title-left {
     position: relative; }
     #section-2 > .title-left > .title {
@@ -640,7 +684,29 @@ textarea {
         margin-right: 50px;
         position: absolute;
         width: 80%;
+        white-space: nowrap;
         top: 40px; }
+        @media screen and (max-width: 780px) {
+          #section-2 > .title-left > .title > h1 {
+            font-size: 3.125rem;
+            top: 50px;
+            width: 70%;
+            padding-right: 100px;
+            padding-left: 50px; } }
+        @media screen and (max-width: 690px) {
+          #section-2 > .title-left > .title > h1 {
+            font-size: 2.5rem;
+            top: 60px;
+            width: 60%; } }
+        @media screen and (max-width: 550px) {
+          #section-2 > .title-left > .title > h1 {
+            font-size: 1.875rem;
+            top: 70px;
+            padding-right: 125px;
+            padding-left: 25px; } }
+        @media screen and (min-width: 1150px) {
+          #section-2 > .title-left > .title > h1 {
+            width: 85%; } }
     #section-2 > .title-left > .tagline {
       position: relative;
       margin-left: 30%; }
@@ -654,8 +720,11 @@ textarea {
         text-align: left;
         padding: 0 50px;
         top: 180px;
-        width: 100%; }
-
+        width: 80%;
+        right: 0; }
+        @media screen and (max-width: 560px) {
+          #section-2 > .title-left > .tagline > h2 {
+            font-size: 1.1875rem; } }
 /* =============
    Section 3
 ============= */
@@ -696,6 +765,13 @@ textarea {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.125rem;
       color: #303F18; }
+    @media screen and (max-width: 780px) {
+      #section-3 > .staff-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "photo" "name" "hometown" "hometown" "info"; }
+        #section-3 > .staff-left > aside {
+          text-align: center; } }
   #section-3 > .staff-right {
     margin-bottom: 50px;
     display: grid;
@@ -720,25 +796,14 @@ textarea {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.125rem;
       color: #303F18; }
-  @media screen and (max-width: 700px) {
-    #section-3 {
-      margin-bottom: 50px;
-      display: grid;
-      grid-template-columns: 100%; }
-      #section-3 > aside {
-        margin-left: 20px; }
-      #section-3 > div > h2 {
-        font-family: 'Vollkorn SC', serif;
-        font-size: 2.25rem;
-        color: #303F18; }
-      #section-3 > div > h3 {
-        font-family: 'Vollkorn SC', serif;
-        font-size: 1.3125rem;
-        color: #303F18; }
-      #section-3 > div > h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.125rem;
-        color: #303F18; } }
+    @media screen and (max-width: 780px) {
+      #section-3 > .staff-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "photo" "name" "hometown" "hometown" "info";
+        text-align: left; }
+        #section-3 > .staff-right > aside {
+          text-align: center; } }
 /* =============
    Section 4
 ============= */
@@ -749,77 +814,51 @@ textarea {
     font-size: 3.75rem;
     text-align: center;
     color: #303F18; }
-  #section-4 > #container-2 {
+  #section-4 > #container-2, #section-4 #container-4, #section-4 #container-6 {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: " photo info"; }
-    #section-4 > #container-2 > aside {
+    #section-4 > #container-2 > aside, #section-4 #container-4 > aside, #section-4 #container-6 > aside {
       margin-right: 20px;
       grid-area: photo; }
-    #section-4 > #container-2 > div {
+    #section-4 > #container-2 > div, #section-4 #container-4 > div, #section-4 #container-6 > div {
       grid-area: info; }
-      #section-4 > #container-2 > div > h2 {
+      #section-4 > #container-2 > div > h2, #section-4 #container-4 > div > h2, #section-4 #container-6 > div > h2 {
         font-family: 'Vollkorn SC', serif;
         font-size: 2.25rem;
         color: #303F18; }
-      #section-4 > #container-2 > div > h3 {
+      #section-4 > #container-2 > div > h3, #section-4 #container-4 > div > h3, #section-4 #container-6 > div > h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3125rem;
         color: #303F18; }
-  #section-4 > #container-3 {
+    @media screen and (max-width: 780px) {
+      #section-4 > #container-2, #section-4 #container-4, #section-4 #container-6 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "photo" "info"; }
+        #section-4 > #container-2 > aside, #section-4 #container-4 > aside, #section-4 #container-6 > aside {
+          text-align: center; }
+        #section-4 > #container-2 > div > h2, #section-4 #container-4 > div > h2, #section-4 #container-6 > div > h2 {
+          text-align: center; } }
+  #section-4 > #container-3, #section-4 #container-5 {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: " info photo "; }
-    #section-4 > #container-3 > aside {
+    #section-4 > #container-3 > aside, #section-4 #container-5 > aside {
       margin-left: 20px;
       grid-area: photo; }
-    #section-4 > #container-3 > div {
+    #section-4 > #container-3 > div, #section-4 #container-5 > div {
       grid-area: info; }
-      #section-4 > #container-3 > div > h3 {
+      #section-4 > #container-3 > div > h3, #section-4 #container-5 > div > h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3125rem;
         color: #303F18; }
-  #section-4 > #container-4 {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: " photo info "; }
-    #section-4 > #container-4 > aside {
-      margin-right: 20px;
-      grid-area: photo; }
-    #section-4 > #container-4 > div {
-      grid-area: info; }
-      #section-4 > #container-4 > div > h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3125rem;
-        color: #303F18; }
-  #section-4 > #container-5 {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: " info photo "; }
-    #section-4 > #container-5 > aside {
-      margin-left: 20px;
-      grid-area: photo; }
-    #section-4 > #container-5 > div {
-      grid-area: info; }
-      #section-4 > #container-5 > div > h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3125rem;
-        color: #303F18; }
-  #section-4 > #container-6 {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: " photo info "; }
-    #section-4 > #container-6 > aside {
-      margin-right: 20px;
-      grid-area: photo; }
-    #section-4 > #container-6 > div {
-      grid-area: info; }
-      #section-4 > #container-6 > div > h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3125rem;
-        color: #303F18; }
+    @media screen and (max-width: 780px) {
+      #section-4 > #container-3, #section-4 #container-5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "photo" "info"; }
+        #section-4 > #container-3 > aside, #section-4 #container-5 > aside {
+          text-align: center; } }

@@ -367,6 +367,7 @@ textarea {
       font-family: 'Vollkorn SC', serif;
       font-weight: bolder;
       font-size: 1rem;
+      white-space: nowrap;
       color: #0F1509;
       text-align: center;
       background-color: #61853B;
@@ -380,12 +381,27 @@ textarea {
       -ms-transition: all .25s ease;
       -o-transition: all .25s ease;
       transition: all .25s ease; }
+      @media screen and (max-width: 900px) {
+        #header > nav > ul > li .button {
+          font-size: 0.8125rem;
+          margin: 20px 7px; } }
+      @media screen and (max-width: 700px) {
+        #header > nav > ul > li .button {
+          font-size: 0.625rem;
+          margin: 20px 4px; } }
     #header > nav > ul > li .button:hover {
       background-color: #F6931D; }
     #header > nav > ul > li > #logo {
       height: 100px;
       margin: 10px 0; }
-
+      @media screen and (max-width: 900px) {
+        #header > nav > ul > li > #logo {
+          height: 75px;
+          margin: 20px 0; } }
+      @media screen and (max-width: 700px) {
+        #header > nav > ul > li > #logo {
+          height: 65px;
+          margin: 25px 0; } }
 /* =============
     Footer
 ============= */
@@ -499,7 +515,7 @@ textarea {
         grid-template-columns: 10% auto 10%;
         grid-template-areas: " . climbing . " " . jam . " " . friends . " " . zone . "; }
         #section-1 > #container-2 > div {
-          margin: 10px 0;
+          margin: 10px auto;
           width: 225px; } }
   #section-1 > #container-3 {
     display: grid;

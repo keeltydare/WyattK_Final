@@ -870,7 +870,8 @@ textarea {
       #section-4 > #container-3 > div > h3, #section-4 #container-5 > div > h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3125rem;
-        color: #303F18; }
+        color: #303F18;
+        text-align: right; }
     @media screen and (max-width: 780px) {
       #section-4 > #container-3, #section-4 #container-5 {
         display: grid;
